@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Intellify Office Tour</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+    #panorama {
+        height: 100vh;
+    }
+    </style>
+</head>
+<body style="margin: 0px;">
+
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+    "autoLoad": true,
+    "default": {
+        "firstScene": "entry",
+        // "author": "The Intellify",
+        "sceneFadeDuration": 1000
+    },
+
+    "scenes": {
+        "entry": {
+            // "title": "Mason Circle",
+            "hfov": 120,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "./images/Office_Tour_0001.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -5,
+                    "yaw": -30,
+                    "type": "scene",
+                    "text": "Lobby 1",
+                    "sceneId": "lobby1"
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 30,
+                    "type": "scene",
+                    "text": "Lobby 2",
+                    "sceneId": "lobby2"
+                }
+            ]
+        },
+
+        "lobby1": {
+            // "title": "Spring House or Dairy",
+            "hfov": 120,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "./images/Office_Tour_0002.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -3,
+                    "yaw": -50,
+                    "type": "scene",
+                    "text": "HR & Salse Team",
+                    "sceneId": "hrsalse",
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 20,
+                    "type": "scene",
+                    "text": "Confrence Hall",
+                    "sceneId": "confrence"
+                },
+            ]
+        },
+
+        "lobby2": {
+            // "title": "Spring House or Dairy",
+            "hfov": 120,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "./images/Office_Tour_0003.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -2,
+                    "yaw": -25,
+                    "type": "scene",
+                    "text": "3D Area",
+                    "sceneId": "area3d",
+                }
+            ]
+        },
+
+        "area3d": {
+            // "title": "Spring House or Dairy",
+            "hfov": 120,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "./images/Office_Tour_0004.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -3,
+                    "yaw": 16,
+                    "type": "scene",
+                    "text": "Meeting Rooms",
+                    "sceneId": "meetingrooms",
+                }
+            ]
+        },
+
+        "meetingrooms": {
+            // "title": "Mason Circle",
+            "hfov": 120,
+            "yaw": 180,
+            "type": "equirectangular",
+            "panorama": "./images/Office_Tour_0005.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -5,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Office Open Area",
+                    "sceneId": "areacenter"
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 120,
+                    "type": "scene",
+                    "text": "Mobile & WEB Team",
+                    "sceneId": "mobileweb"
+                }
+            ]
+        },
+
+        "darshak": {
+            // "title": "Mason Circle",
+            "hfov": 120,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "./images/Office_Tour_0006.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -36,
+                    "yaw": 88,
+                    "type": "scene",
+                    "text": "Office Open Area",
+                    "sceneId": "areacenter"
+                },
+            ]
+        },
+
+        "shravan": {
+            // "title": "Mason Circle",
+            "hfov": 120,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "./images/Office_Tour_0007.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -18,
+                    "yaw": 106.5,
+                    "type": "scene",
+                    "text": "Office Open Area",
+                    "sceneId": "areacenter"
+                },
+            ]
+        },
+
+        "confrence": {
+            // "title": "Mason Circle",
+            "hfov": 120,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "./images/Office_Tour_0008.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -5,
+                    "yaw": 160,
+                    "type": "scene",
+                    "text": "Office Open Area",
+                    "sceneId": "areacenter"
+                },
+            ]
+        },
+
+        "hrsalse": {
+            // "title": "Mason Circle",
+            "hfov": 120,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "./images/Office_Tour_0009.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -5,
+                    "yaw": -79,
+                    "type": "scene",
+                    "text": "Confrence Hall",
+                    "sceneId": "confrence"
+                },
+            ]
+        },
+
+        "areacenter": {
+            // "title": "Mason Circle",
+            "hfov": 120,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "./images/Office_Tour_0010.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -5,
+                    "yaw": -20,
+                    "type": "scene",
+                    "text": "Shravan Office",
+                    "sceneId": "shravan"
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 20,
+                    "type": "scene",
+                    "text": "Darshak Office",
+                    "sceneId": "darshak"
+                },
+            ]
+        },
+
+        "mobileweb": {
+            // "title": "Mason Circle",
+            "hfov": 120,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "./images/Office_Tour_0011.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -5,
+                    "yaw": 30,
+                    "type": "scene",
+                    "text": "Entry Point",
+                    "sceneId": "entry"
+                }
+            ]
+        },
+
+    }
+});
+</script>
+
+</body>
+</html>
